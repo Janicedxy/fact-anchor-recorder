@@ -6937,13 +6937,14 @@
   function renderExportAnalysisChecklist() {
     const container = document.getElementById('export-analysis-list');
     const reports = getSavedAnalysisReports();
+    const parentChecked = document.getElementById('export-opt-analysis').checked;
     if (reports.length === 0) {
       container.innerHTML = '<p class="export-option-desc">暂无已保存的分析报告。</p>';
       return;
     }
     container.innerHTML = reports.map(report => `
       <label class="export-analysis-item">
-        <input type="checkbox" name="export-analysis-item" value="${report.id}" checked>
+        <input type="checkbox" name="export-analysis-item" value="${report.id}"${parentChecked ? '' : ' disabled'}>
         <div>
           <div>${escapeHtml(report.title)}</div>
           <div class="export-analysis-item-meta">${escapeHtml(formatExportTimestamp(report.savedAt))}</div>
@@ -6976,7 +6977,14 @@
     document.getElementById('export-markdown-filters').hidden = !mdChecked;
     const analysisList = document.getElementById('export-analysis-list');
     analysisList.hidden = !analysisChecked;
-    if (analysisChecked) renderExportAnalysisChecklist();
+    if (analysisChecked) {
+      renderExportAnalysisChecklist();
+    } else {
+      document.querySelectorAll('input[name="export-analysis-item"]').forEach(cb => {
+        cb.checked = false;
+        cb.disabled = true;
+      });
+    }
   }
 
   function executeSidebarExport() {
