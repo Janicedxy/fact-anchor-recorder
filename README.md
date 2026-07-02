@@ -60,7 +60,7 @@
 
 ## **产品定位**
 
-![首页](screenshots/home.png)
+![首页](docs/screenshots/home.png)
 
 心理学里有一句话：**看见，即是疗愈的开始。**
 
@@ -109,16 +109,16 @@
 
 当认知还处于混乱中，最重要的不是分析，而是先把那些说不清的感受变成具体的文字。
 
-![选择记录类型](screenshots/record-type-select.png)
+![选择记录类型](docs/screenshots/record-type-select.png)
 
 - **两种记录模式**：你可以选择“记仇”，因为有明确的对象；也可以选择“不舒服的瞬间”，因为不确定这算什么，但你的感受是真实的。两种模式可以在编辑中随时切换——写着写着，你可能发现事情的性质变了。
 - **结构化表单**：字段按照“触发→对方行为→我的情绪起点→我的自动思维→我的反应→结束方式→联想→评分”的心理复盘流程设计。这本质上是认知行为疗法（CBT）的日常化应用——只是翻译成了人话。
 
-![记仇编辑表单](screenshots/jichou-edit-1.png)
+![记仇编辑表单](docs/screenshots/jichou-edit-1.png)
 
 - **重视背景与事实的关联**：首次记录一个新对象时，系统会引导你写几句关于这段关系的背景；记录字段中包含当前个人状态（身体情况、是否遭遇变故等），这让后续的分析有更完整的上下文——毕竟人的状态受多方面影响，不只看单一事件。
 
-![关系简述](screenshots/archive.png)
+![关系简述](docs/screenshots/archive.png)
 
 
 
@@ -128,13 +128,13 @@
 
 - **Dashboard预览**：每条记录生成一个数据看板。评分置顶，事实区和感受区分列。点击归档记录时，默认展示预览页，而不是直接进入编辑——因为有时候你只是想“看一眼”，而不是“改点什么”。
 
-![记仇Dashboard](screenshots/jichou-dashboard.png)
-![不舒服的瞬间Dashboard](screenshots/uncomfortable-dashboard.png)
+![记仇Dashboard](docs/screenshots/jichou-dashboard.png)
+![不舒服的瞬间Dashboard](docs/screenshots/uncomfortable-dashboard.png)
 
 - **侧边栏归档**：三个分类文件夹（记仇/不舒服的瞬间/梦境记录），按事件发生时间排序，支持折叠展开。未完成的草稿有独立标记，不会和正式记录混在一起。
 - **安全感设计贯穿始终**：草稿自动保存，离开再回来不会丢；误触返回时有“点错了，继续写”按钮；删除不是机械操作，而是一个需要确认的仪式——“你写下的每个文字，都是自己的历史。确定删除吗？”
 
-![废弃弹窗](screenshots/discard.png)
+![废弃弹窗](docs/screenshots/discard.png)
 
 
 
@@ -142,7 +142,7 @@
 
 当同一对象的记录达到3条，或总记录达到5条，系统会提醒你可以查看脉络分析。
 
-![脉络分析选择](screenshots/analysis-select.png)
+![脉络分析选择](docs/screenshots/analysis-select.png)
 
 - **选择分析范围**：你可以按时间段、对象、维度自由组合——只分析某个人，同时分析多个人（此时系统会聚焦你自身的跨关系模式），加入梦境作为辅助参考，或补充一些没有记录但对你产生过影响的外部事件（比如某本书、朋友的一句话）。
 - **AI驱动的分析报告（目前接入DeepSeek）**：报告由四个模块组成——
@@ -151,10 +151,10 @@
   3. 情绪曲线（评分+情绪词的双维度展示）
   4. 转折点（态度或行为发生明显变化的时刻）
 
-![分析报告-关系关键词](screenshots/report-1.png)
-![分析报告-行为模式](screenshots/report-2.png)
-![分析报告-情绪曲线](screenshots/report-3.png)
-![分析报告-转折点与模式联想](screenshots/report-4.png)
+![分析报告-关系关键词](docs/screenshots/report-1.png)
+![分析报告-行为模式](docs/screenshots/report-2.png)
+![分析报告-情绪曲线](docs/screenshots/report-3.png)
+![分析报告-转折点与模式联想](docs/screenshots/report-4.png)
 
     所有分析结论只呈现模式，不做诊断、不给建议。
 - **分析记录自动保存**：每次分析都会保存下来，你可以随时回顾不同时期的分析报告，看到自己认知的变化过程。
@@ -165,7 +165,7 @@
 
 除了记录现实事件，产品还提供了一个独立的梦境记录模块。
 
-![梦境编辑表单](screenshots/dream-edit-1.png)
+![梦境编辑表单](docs/screenshots/dream-edit-1.png)
 
 - **为什么需要梦境记录**：心理学研究认为，潜意识状态会通过梦境反映心理变化。梦境为理解自己的情绪和状态提供了另一个视角。
 - **定位为辅助手段**：由于梦的解析在心理学界仍存在多种流派和争议，本产品将梦境分析定位为辅助参考，不做强行解读。当梦境数量少于3条时，系统不会生成联合分析，避免牵强附会。
@@ -181,8 +181,8 @@
 - **本地优先**：所有数据默认存储在浏览器本地，不上传任何服务器。API分析是可选功能，发送前会进行数据脱敏。
 - **多格式导出**：你可以导出为JSON格式用于备份和迁移，也可以导出为Markdown格式——一份清晰的时间线文档，适合自己阅读，或打印出来带给心理咨询师。
 
-![首页导出](screenshots/export-home.png)
-![Dashboard导出](screenshots/export-dashboard.png)
+![首页导出](docs/screenshots/export-home.png)
+![Dashboard导出](docs/screenshots/export-dashboard.png)
 
 - **你决定数据的去向**：这个产品不锁定你的数据。你想带走、分享、删除，都由你决定。
 - **我们希望看到的是**：你拿着这份自己整理的“一手材料”，在现实世界里获得真正的支持与力量。
