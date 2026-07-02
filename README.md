@@ -233,7 +233,7 @@
 
 | 文档                                                                     | 说明                                                       |
 | ---------------------------------------------------------------------- | -------------------------------------------------------- |
-| [产品设计原则与专业依据](./docs/design_principles_and_professional_references.md) | 7条核心设计原则，以及每条背后对应的心理学、伦理学和法律依据                           |
+| [产品设计原则与专业依据](./docs/design_principles_with_references.md) | 7条核心设计原则，以及每条背后对应的心理学、伦理学和法律依据                           |
 | [Badcase 迭代日志](./docs/badcase_log.md)                                  | 从原型搭建到API接入，28条Badcase的完整记录——发现、归因、修复方案、修复后效果            |
 | [主流大模型对比分析](./docs/model_comparison_notes.md)                          | 基于一年半使用体验，对比DeepSeek、Gemini、ChatGPT及简单心理AI在心理创伤场景下的表现与边界 |
 | [产品扩展性思考](./docs/product_scalability.md)                               | 探讨如何将框架从NPD创伤场景扩展至“人生主线复盘”等通用自我叙事领域                      |
